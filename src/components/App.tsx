@@ -19,7 +19,6 @@ function App() {
         : feedbackItems,
     [feedbackItems, selectedCompany]
   );
-
   const companyList = useMemo(
     () =>
       feedbackItems
@@ -59,7 +58,6 @@ function App() {
       }
     );
   };
-
   const handleSelectCompany = (company: string) => {
     setSelectedCompany(company);
   };
